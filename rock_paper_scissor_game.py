@@ -2,18 +2,18 @@ import random
 import streamlit as st
 
 st.set_page_config(
-    page_title="Diptyque — Adiba & Faheed",
+    page_title="Adiba & Faheed",
     page_icon="🕯️",
     layout="centered"
 )
 
-# Diptyque Vintage Oval SVG & Aesthetic CSS
+# Custom Aesthetic & Minimalist CSS
 st.markdown(
     """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
-    /* Creamy off-white Background */
+    /* Soft Off-White Background */
     .stApp {
         background-color: #FBF9F5;
         color: #1A1A1A;
@@ -24,16 +24,13 @@ st.markdown(
         font-family: 'Cormorant Garamond', serif !important;
     }
 
-    /* Diptyque Signature Oval Frame Container */
-    .diptyque-oval-card {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 420'%3E%3Cpath d='M150,10 C220,10 280,70 280,210 C280,350 220,410 150,410 C80,410 20,350 20,210 C20,70 80,10 150,10 Z' fill='none' stroke='%231A1A1A' stroke-width='2'/%3E%3Cpath d='M150,18 C213,18 272,75 272,210 C272,345 213,402 150,402 C87,402 28,345 28,210 C28,75 87,18 150,18 Z' fill='none' stroke='%231A1A1A' stroke-width='0.8' stroke-dasharray='3 3'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: contain;
-        padding: 50px 40px;
+    /* Minimalist Border Box */
+    .custom-card {
+        border: 1px solid #1A1A1A;
+        padding: 40px 30px;
         text-align: center;
         max-width: 420px;
-        margin: 0 auto;
+        margin: 20px auto 30px auto;
     }
 
     .brand-header {
@@ -41,26 +38,26 @@ st.markdown(
         letter-spacing: 0.35em;
         text-transform: uppercase;
         color: #555555;
-        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
     .brand-title {
-        font-size: 2rem;
-        letter-spacing: 0.25em;
+        font-size: 2.2rem;
+        letter-spacing: 0.2em;
         text-transform: uppercase;
         font-weight: 400;
-        margin: 10px 0;
+        margin: 15px 0;
         border-bottom: 1px solid #1A1A1A;
         display: inline-block;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
     }
 
     .brand-subtitle {
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
+        font-size: 0.85rem;
+        letter-spacing: 0.25em;
         font-style: italic;
         color: #444444;
-        margin-bottom: 25px;
+        margin-top: 5px;
     }
 
     /* Minimalist Transparent Buttons */
@@ -97,7 +94,7 @@ st.markdown(
 
     .score-banner {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 40px;
         font-size: 0.85rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
@@ -151,10 +148,10 @@ def reset_all():
     st.session_state.faheed_score = 0
     st.session_state.last_game = None
 
-# --- DIPTYQUE EMBLEM CONTAINER ---
+# --- HEADER EMBLEM CONTAINER ---
 st.markdown(
     """
-    <div class="diptyque-oval-card">
+    <div class="custom-card">
         <div class="brand-header">DHAKA, BANGLADESH</div>
         <div class="brand-title">ADIBA × FAHEED</div>
         <div class="brand-subtitle">EAU DE GAME</div>

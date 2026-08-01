@@ -155,7 +155,7 @@ def reset_all():
 st.markdown(
     """
     <div class="diptyque-oval-card">
-        <div class="brand-header">PARIS</div>
+        <div class="brand-header">DHAKA, BANGLADESH</div>
         <div class="brand-title">ADIBA × FAHEED</div>
         <div class="brand-subtitle">EAU DE GAME</div>
     </div>
